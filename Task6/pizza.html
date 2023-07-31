@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIZZA HUT</title>
+    <style>
+        /* Set the container size and display as a grid */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh; /* 100% of viewport height */
+            width: 100vw;  /* 100% of viewport width */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Style each frame with borders and padding */
+        .frame {
+            border: 1px;
+            padding: 10px;
+            height: 100%; /* Occupy full height of parent container */
+            width: 100%;  /* Occupy full width of parent container */
+            box-sizing: border-box; /* Include borders and padding in total width/height */
+            display: flex; /* Use flexbox to center the image */
+            justify-content: center; /* Horizontally center the image */
+            align-items: center; /* Vertically center the image */
+        }
+
+        /* Style the images to fit inside the frames */
+        .frame img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Style the small square map container in the footer */
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            height: 200px;
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Set the size of the small map */
+        footer iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="frame">
+            <!-- Content for Frame 1 (Image 1) -->
+            <img src="pizza1.jpg" alt="Image 1">
+        </div>
+        <div class="frame">
+            <!-- Content for Frame 2 (Image 2) -->
+            <img src="pizza2.jpg" alt="Image 2">
+        </div>
+        <div class="frame">
+            <!-- Content for Frame 3 (Image 3) -->
+            <img src="pizza3.jpg" alt="Image 3">
+        </div>
+        <div class="frame">
+            <!-- Content for Frame 4 (Image 4) -->
+            <img src="pizza4.jpg" alt="Image 4">
+        </div>
+    </div>
+
+    <!-- Footer section with the small square map -->
+    <footer>
+        
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.487710046919!2d76.98744469804194!3d11.018148642304475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85965e85bf5f1%3A0x56bf1641a7f9a61f!2sPizza%20Hut!5e0!3m2!1sen!2sin!4v1690281096734!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+    </footer>
+</body>
+</html>
